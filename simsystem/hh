@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohammad Nakhleh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Profile Image">
+
+    <h1>Mohammad Nakhleh</h1>
+
+    <p>
+      I am a cybersecurity student who loves technology, gaming, and learning new skills.
+    </p>
+
+    <p>
+      I enjoy car tuning, drifting in simulation games, and hanging out with friends.
+    </p>
+
+    <button onclick="sayHello()">Click Me</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 10px 0;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #2575fc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a5edb;
+}
+
+function sayHello() {
+  alert("Welcome to my personal page 😎");
+}
