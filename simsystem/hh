@@ -87,3 +87,7 @@ button:hover {
 function sayHello() {
   alert("Welcome to my personal page 😎");
 }
+
+<p>
+I’m Mohammad Firas Nakhleh, a cybersecurity student from Jordan with a passion for technology, cars, and creativity. I enjoy building and creating, whether it’s developing websites or working toward my dream of owning a Mercedes-Benz 190E again and upgrading it with a powerful 2JZ twin-turbo engine. I’m also into realistic driving games and drifting, especially with cars like the BMW M4, and I like playing competitive games such as Call of Duty with my friends. Alongside my studies, I run my own coffee shop, “Mazaj,” which reflects my entrepreneurial mindset. I also have a strong connection to music, enjoying artists like Tupac Shakur and Pop Smoke. Overall, I’m driven by ambition and always looking to improve, learn, and build something meaningful.
+</p>
