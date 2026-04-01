@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Blog - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Travel Blog</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tips.html">Travel Tips</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Welcome</h2>
+        <p>This blog shares amazing travel destinations, tips, and beautiful places around the world.</p>
+        <img src="images/travel.jpg" alt="Beautiful travel destination view">
+    </section>
+</main>
+
+<footer>
+    <p>Contact: mohammad@email.com</p>
+</footer>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Top Destinations</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tips.html">Travel Tips</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<main>
+
+<article>
+    <h2>Paris</h2>
+    <img src="images/paris.jpg" alt="Eiffel Tower in Paris">
+    <p>Paris is known for its beauty, culture, and the Eiffel Tower.</p>
+    <a href="#">Read More</a>
+</article>
+
+<article>
+    <h2>Dubai</h2>
+    <img src="images/dubai.jpg" alt="Burj Khalifa in Dubai">
+    <p>Dubai is famous for luxury shopping and modern architecture.</p>
+    <a href="#">Read More</a>
+</article>
+
+<article>
+    <h2>Rome</h2>
+    <img src="images/rome.jpg" alt="Colosseum in Rome">
+    <p>Rome offers rich history and ancient landmarks.</p>
+    <a href="#">Read More</a>
+</article>
+
+</main>
+
+<footer>
+    <p>Contact: mohammad@email.com</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Tips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Travel Tips</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tips.html">Travel Tips</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Helpful Tips</h2>
+
+    <h3>1. Pack Light</h3>
+    <p>Carry only what you need for easy travel.</p>
+
+    <h3>2. Keep Documents Safe</h3>
+    <p>Always have copies of your passport.</p>
+
+    <h3>3. Learn Basic Phrases</h3>
+    <p>Helps communicate in different countries.</p>
+
+    <h3>4. Stay Hydrated</h3>
+    <p>Drink enough water during your trip.</p>
+
+    <h3>5. Plan Ahead</h3>
+    <p>Book hotels and tickets early.</p>
+
+</section>
+
+<aside>
+    <p>Tip: Always check the weather before traveling!</p>
+</aside>
+
+</main>
+
+<footer>
+    <p>Contact: mohammad@email.com</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Travel Gallery</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="tips.html">Travel Tips</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<main>
+
+<section class="gallery">
+
+<figure>
+    <img src="images/img1.jpg" alt="Beach view">
+    <figcaption>Beautiful Beach</figcaption>
+</figure>
+
+<figure>
+    <img src="images/img2.jpg" alt="Mountain view">
+    <figcaption>Mountain Landscape</figcaption>
+</figure>
+
+<figure>
+    <img src="images/img3.jpg" alt="City skyline">
+    <figcaption>City Skyline</figcaption>
+</figure>
+
+<figure>
+    <img src="images/img4.jpg" alt="Forest nature">
+    <figcaption>Forest</figcaption>
+</figure>
+
+<figure>
+    <img src="images/img5.jpg" alt="Desert view">
+    <figcaption>Desert</figcaption>
+</figure>
+
+<figure>
+    <img src="images/img6.jpg" alt="Snow mountains">
+    <figcaption>Snow Mountains</figcaption>
+</figure>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Contact: mohammad@email.com</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+figure {
+    width: 30%;
+}
