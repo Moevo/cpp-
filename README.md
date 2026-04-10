@@ -1,6 +1,4 @@
 # 💻 C++ Learning Journey
-![C++](https://img.shields.io/badge/C++-Programming-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
 Welcome to my C++ learning journey 👨‍💻🚀  
 This repository documents my progress in learning C++, understanding core concepts, and building efficient programs.
 ---
@@ -18,4 +16,3 @@ This repository documents my progress in learning C++, understanding core concep
 - Master C++ fundamentals  
 - Improve algorithmic thinking  
 - Build efficient and optimized code
-- 
