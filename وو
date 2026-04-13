@@ -63,4 +63,20 @@ type Support\Documentation\Manuals\doc_ticket.txt
 
 del Support\Documentation\Manuals\doc_ticket.txt
 
+1. Which commands did you use for file creation؟
+	•	echo > filename
+	•	ممكن كمان type nul > filename
+
+⸻
+
+2. What is the difference between copying and moving files؟
+	•	Copy (copy): بعمل نسخة وبيخلي الأصل
+	•	Move (move): بنقل الملف وبيحذفه من مكانه الأصلي
+
+⸻
+
+3. Why do we use structured folders in organizations؟
+	•	لتنظيم البيانات
+	•	تسهيل الوصول للملفات
+	•	تحسين الإدارة والعمل الجماعي
 
