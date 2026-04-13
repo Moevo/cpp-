@@ -1,0 +1,66 @@
+mkdir GlobalCorp
+cd GlobalCorp
+
+mkdir Finance Engineering Support
+
+mkdir Finance\Budgets
+mkdir Finance\Reports\Q1
+
+mkdir Engineering\Hardware\Designs
+mkdir Engineering\Software\Testing
+mkdir Engineering\Software\Modules
+
+mkdir Support\Documentation\Manuals
+mkdir Support\Tickets
+mkdir Finance\Statements
+
+echo Budget Data > Finance\Budgets\budget.txt
+echo Q1 Report > Finance\Reports\Q1\report.txt
+
+echo Hardware Design > Engineering\Hardware\Designs\design.txt
+echo Testing File > Engineering\Software\Testing\test.txt
+
+echo Manuals File > Support\Documentation\Manuals\manual.txt
+
+
+dir Finance\Budgets
+tree
+type Finance\Budgets\budget.txt
+
+
+copy Finance\Reports\Q1\report.txt Finance\Budgets
+
+move Engineering\Software\Testing\test.txt Engineering\Software\Modules
+
+ren Finance\Budgets\budget.txt annual.txt
+
+xcopy Engineering EngineeringBackup /E /I
+
+
+ren Support\Tickets t
+
+move Finance\Reports\Q1 Finance\Budgets
+
+rmdir Finance\Statements
+
+rmdir /S /Q EngineeringBackup
+
+
+attrib +r Finance\Budgets\annual.txt
+
+cls
+
+
+echo Ticket File > Support\t\ticket.txt
+
+copy Support\t\ticket.txt Support\Documentation
+
+ren Support\Documentation\ticket.txt doc_ticket.txt
+
+move Support\Documentation\doc_ticket.txt Support\Documentation\Manuals
+
+type Support\Documentation\Manuals\doc_ticket.txt
+
+del Support\Documentation\Manuals\doc_ticket.txt
+
+
