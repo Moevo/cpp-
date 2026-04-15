@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mohammad Nakhleh | Cyber Security Specialist</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <img src="me.jpg" alt="My Photo" class="profile-img">
+
+    <p>
+        Passionate cybersecurity student focused on ethical hacking, network security, and digital defense.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>Penetration Testing</li>
+        <li>Network Security</li>
+        <li>Wireshark Analysis</li>
+        <li>Linux Systems</li>
+        <li>Python Scripting</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Mohammad Nakhleh</p>
+</footer>
+
+</body>
+</html>
+
+/* General */
+body {
+    font-family: "Courier New", monospace;
+    margin: 0;
+    background-color: #0a0f1c;
+    color: #00ff9c;
+}
+
+/* Header */
+header {
+    background-color: #020617;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #00ff9c;
+}
+
+header h1 {
+    text-shadow: 0 0 10px #00ff9c;
+}
+
+/* Navigation */
+nav a {
+    color: #00ff9c;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #020617;
+    border: 1px solid #00ff9c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff9c33;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #00ff9c;
+    display: block;
+    margin: 15px auto;
+    object-fit: cover;
+    box-shadow: 0 0 20px #00ff9c;
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00bfff;
+}
+
+/* Skills */
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: ">> ";
+    color: #00bfff;
+}
+
+/* Form */
+form {
+    background-color: #010409;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00ff9c;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black;
+    color: #00ff9c;
+    border: 1px solid #00ff9c;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00bfff;
+    box-shadow: 0 0 10px #00bfff;
+}
+
+/* Button */
+button {
+    background-color: transparent;
+    color: #00ff9c;
+    border: 1px solid #00ff9c;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00ff9c;
+    color: black;
+    box-shadow: 0 0 15px #00ff9c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #00ff9c;
+}
+
