@@ -1,82 +1,119 @@
-mkdir GlobalCorp
-cd GlobalCorp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-mkdir Finance Engineering Support
+<header>
+    <h1>Mohammad Nakhleh</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-mkdir Finance\Budgets
-mkdir Finance\Reports\Q1
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a cybersecurity student who loves programming and building web applications.</p>
+</section>
 
-mkdir Engineering\Hardware\Designs
-mkdir Engineering\Software\Testing
-mkdir Engineering\Software\Modules
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Cybersecurity Basics</li>
+    </ul>
+</section>
 
-mkdir Support\Documentation\Manuals
-mkdir Support\Tickets
-mkdir Finance\Statements
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
-echo Budget Data > Finance\Budgets\budget.txt
-echo Q1 Report > Finance\Reports\Q1\report.txt
+<footer>
+    <p>© 2026 Mohammad Nakhleh</p>
+</footer>
 
-echo Hardware Design > Engineering\Hardware\Designs\design.txt
-echo Testing File > Engineering\Software\Testing\test.txt
-
-echo Manuals File > Support\Documentation\Manuals\manual.txt
-
-
-dir Finance\Budgets
-tree
-type Finance\Budgets\budget.txt
-
-
-copy Finance\Reports\Q1\report.txt Finance\Budgets
-
-move Engineering\Software\Testing\test.txt Engineering\Software\Modules
-
-ren Finance\Budgets\budget.txt annual.txt
-
-xcopy Engineering EngineeringBackup /E /I
-
-
-ren Support\Tickets t
-
-move Finance\Reports\Q1 Finance\Budgets
-
-rmdir Finance\Statements
-
-rmdir /S /Q EngineeringBackup
+</body>
+</html>
 
 
-attrib +r Finance\Budgets\annual.txt
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
 
-cls
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
 
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
 
-echo Ticket File > Support\t\ticket.txt
+nav a:hover {
+    color: #00bcd4;
+}
 
-copy Support\t\ticket.txt Support\Documentation
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
 
-ren Support\Documentation\ticket.txt doc_ticket.txt
+/* Skills */
+ul {
+    list-style-type: square;
+}
 
-move Support\Documentation\doc_ticket.txt Support\Documentation\Manuals
+/* Form */
+form {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-type Support\Documentation\Manuals\doc_ticket.txt
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
 
-del Support\Documentation\Manuals\doc_ticket.txt
+input:focus, textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
 
-1. Which commands did you use for file creation؟
-	•	echo > filename
-	•	ممكن كمان type nul > filename
+button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
-⸻
-
-2. What is the difference between copying and moving files؟
-	•	Copy (copy): بعمل نسخة وبيخلي الأصل
-	•	Move (move): بنقل الملف وبيحذفه من مكانه الأصلي
-
-⸻
-
-3. Why do we use structured folders in organizations؟
-	•	لتنظيم البيانات
-	•	تسهيل الوصول للملفات
-	•	تحسين الإدارة والعمل الجماعي
-
+button:hover {
+    background-color: #0097a7;
+}
