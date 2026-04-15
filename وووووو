@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cyber Portfolio</title>
+    <title>Mohammad Nakhleh</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,21 +20,21 @@
 <section id="about">
     <h2>About Me</h2>
 
-    <img src="me.jpg" alt="My Photo" class="profile-img">
+    <img src="me.jpeg" alt="My Photo" class="profile-img">
 
     <p>
-        Passionate cybersecurity student focused on ethical hacking, network security, and digital defense.
+       im mohammad nakhleh, a Cyber security student at middle east university, i develop my skills in web development 
     </p>
 </section>
 
 <section id="skills">
     <h2>My Skills</h2>
     <ul>
-        <li>Penetration Testing</li>
-        <li>Network Security</li>
-        <li>Wireshark Analysis</li>
-        <li>Linux Systems</li>
-        <li>Python Scripting</li>
+        <tag class="tag">HTML</tag>
+        <tag class="tag">CSS</tag>
+        <tag class="tag">SQL</tag>
+        <tag class="tag">Python</tag>
+        <tag class="tag">c++</tag>
     </ul>
 </section>
 
@@ -47,14 +48,13 @@
     </form>
 </section>
 
+
 <footer>
     <p>© 2026 Mohammad Nakhleh</p>
 </footer>
-
 </body>
 </html>
 
-/* General */
 body {
     font-family: "Courier New", monospace;
     margin: 0;
@@ -62,7 +62,7 @@ body {
     color: #00ff9c;
 }
 
-/* Header */
+
 header {
     background-color: #020617;
     padding: 20px;
@@ -73,8 +73,32 @@ header {
 header h1 {
     text-shadow: 0 0 10px #00ff9c;
 }
+p,h2{
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
-/* Navigation */
+.tag{
+   display: inline-block;
+    background-color: #00ff9c;
+    color: black;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.tag:hover {
+    background-color: #020617;
+    color: white;
+    box-shadow: 0 0 10px #00ff9c;
+}
+
+
 nav a {
     color: #00ff9c;
     margin: 15px;
@@ -87,7 +111,7 @@ nav a:hover {
     text-shadow: 0 0 10px #00bfff;
 }
 
-/* Sections */
+
 section {
     margin: 20px;
     padding: 20px;
@@ -97,7 +121,7 @@ section {
     box-shadow: 0 0 10px #00ff9c33;
 }
 
-/* Profile Image */
+
 .profile-img {
     width: 150px;
     height: 150px;
@@ -115,7 +139,7 @@ section {
     box-shadow: 0 0 30px #00bfff;
 }
 
-/* Skills */
+
 ul {
     list-style-type: none;
 }
@@ -125,7 +149,7 @@ ul li::before {
     color: #00bfff;
 }
 
-/* Form */
+
 form {
     background-color: #010409;
     padding: 20px;
@@ -148,7 +172,6 @@ input:focus, textarea:focus {
     box-shadow: 0 0 10px #00bfff;
 }
 
-/* Button */
 button {
     background-color: transparent;
     color: #00ff9c;
@@ -164,10 +187,8 @@ button:hover {
     box-shadow: 0 0 15px #00ff9c;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
     border-top: 1px solid #00ff9c;
 }
-
